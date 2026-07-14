@@ -15,3 +15,8 @@ print(nu1+nu2)
 n1 = int(input("enter your no1: "))
 n2 =int(input("enter your no2: "))
 print(n1+n2)
+# we all so do some changes
+no1 = int(input("enter 1num"))
+no2 = int(input("enter 2num"))
+sum = no1+no2
+print(sum)
