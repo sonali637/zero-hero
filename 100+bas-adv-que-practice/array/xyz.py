@@ -142,13 +142,25 @@
 # arr = [1,0,2,0,6,0,6,3,0,0]
 # print(move_zero(arr))    
 
-def reverse_arr(arr):
-    l = 0
-    r = len(arr) - 1
-    while l < r:
-        arr[l],arr[r] = arr[r],arr[l]
-        l = +1
-        r = -1
-    return arr
-arr = [1,2,3,4,5,6]
-print(reverse_arr(arr))       
+# # reverse array
+# def reverse_arr(arr):
+#     l = 0
+#     r = len(arr) - 1
+#     while l < r:
+#         arr[l],arr[r] = arr[r],arr[l]
+#         l = +1
+#         r = -1
+#     return arr
+# arr = [1,2,3,4,5,6]
+# print(reverse_arr(arr))       
+
+# concadination
+def concad(num):
+    n = len(num)
+    ans = [0] * (2*n)
+    for i in range(n):
+        ans[i] = num[i]
+        ans[i+n] = num[i]
+    return ans
+num = [1,2,3,4]
+print(concad(num))    
